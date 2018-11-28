@@ -1,0 +1,11 @@
+/* default CSS */
+
+.hamburger-menu {
+  width: 35px;
+  height: 5px;
+  background-color: #000000;
+  margin: 6px;
+}
+.center-text {
+  text-align: center;
+}

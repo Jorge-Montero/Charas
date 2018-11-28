@@ -4,17 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    .hamburger-menu {
-      width: 35px;
-      height: 5px;
-      background-color: #000000;
-      margin: 6px;
-    }
-    .center-text {
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="/views/default.css" />
   <title>Primo Charas</title>
 </head>
 <body>
@@ -82,6 +72,8 @@
   </p>
 
   <h2>Dispensaries</h2>
+    <p><button onclick="geoFindMe()">Dispensaries near me</button></p>
+    <div id="out"></div>
     <h3>Map</h3>
       <h4>United States</h4>
       <ul>
@@ -345,7 +337,6 @@
           </ul>
         </li>
       </ul>
-      <p>reference: <a href="https://cbdorigin.com/is-cbd-legal/" target="_blank">CBD legalization status</a></p>
       <h4>US Territories</h4>
       <ul>
         <li>Guam
@@ -359,9 +350,13 @@
           </ul>
         </li>
       </ul>
-        <li><a href="http://primocharas.com/dispensaries.html">Dispensaries</a></li>
-
       <h4>Canada</h4>
+    <h3>Full Dispensaries Listing</h3>
+    <p>
+      <a href="http://primocharas.com/dispensaries.html">Dispensaries</a>
+    </p>
+    <p>reference: <a href="https://cbdorigin.com/is-cbd-legal/" target="_blank">CBD legalization status</a></p>
+
 
   <h2>Health &amp; Safety</h2>
   <h3 class="center-text">CBD health Awareness Intelligence (chAI)</h3>
@@ -379,10 +374,6 @@
     <nav>
     </nav>
   </footer>
-<!-- geo-location goes here
-<script>
-</script>
--->
-
+<script src="/controllers/main.js"></script>
 </body>
 </html>
