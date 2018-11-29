@@ -1,5 +1,11 @@
-/* default CSS */
+/* Primo Charas - default.css version 0.1.1 */
 
+/* global tag settings */
+body {
+  background-color: #e6e6e6;
+}
+
+/* grouped class settings */
 .hamburger-menu {
   width: 35px;
   height: 5px;
@@ -9,3 +15,8 @@
 .center-text {
   text-align: center;
 }
+
+
+/* individual ID settings */
+
+
