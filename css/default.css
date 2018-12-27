@@ -1,4 +1,18 @@
 /* default */
+.pain-selection {
+  display: inline-block;
+}
+#body-submit {
+  width: 100px;
+  display: block;
+}
+
+/* pain list */
+#pain-list {
+  height: 200px;
+  margin-top: 0;
+  padding-top: 0;
+}
 
 /* human figure */
 .zero {
@@ -65,36 +79,3 @@
   border-radius: 0 0 15px 15px;
 }
 
-/*
-.hand,.arm,.torso,.foot,.leg,.hip {
-  display: inline-block;
-}
-.torso {
-  width: 50px;
-  height: 50px;
-}
-.arm {
-  width: 50px;
-  height: 50px;
-}
-.forearm {
-  width: 50px;
-  height: 50px;
-}
-.hand {
-  width: 50px;
-  height: 50px;
-}
-.abdomen {
-  width: 50px;
-  height: 50px;
-}
-.leg {
-  width: 50px;
-  height: 50px;
-}
-.foot {
-  width: 50px;
-  height: 50px;
-}
-*/
