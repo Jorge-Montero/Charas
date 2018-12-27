@@ -34,118 +34,18 @@
   <section id="pain-on-body">
     <h3>Area in pain</h3>
     <form action="/nothing_yet.php">
-      <div id="pick-pain-on-body">
-        <div id="man" class="human male">
-          <div class="head">head</div>
-          <div class="torso">torso
-            <div class="front-torso">
-              <div class="chest top-front-torso">chest</div>
-              <div class="abdomen bottom-front-torso">abdomen</div>
-            </div>
-            <div class="rear-torso">
-              <div class="back">back</div>
-            </div>
-          </div>
-          <div class="limbs">limbs
-            <div class="upperlimbs">upper
-              <div class="arm">arm</div>
-              <div class="forearm">forearm</div>
-              <div class="hand">hand
-                <div class="palm">palm</div>
-                <div class="fingers">fingers</div>
-              </div>
-              <div class="arm">arm</div>
-              <div class="forearm">forearm</div>
-              <div class="hand">hand
-                <div class="palm">palm</div>
-                <div class="fingers">fingers</div>
-              </div>
-            <div class="lowerlimbs">lower
-              <div class="rightside">
-                <div class="thigh">thigh</div>
-                <div class="leg">leg
-                  <div class="shin front">shin</div>
-                  <div class="calf rear">calf</div>
-                </div>
-                <div class="foot">foot
-                  <div class="toes front">toes</div>
-                  <div class="midfoot middle"></div>
-                  <div class="heel rear">heal</div>
-                </div>
-              </div>
-              <div class="leftside">
-                <div class="thigh">thigh</div>
-                <div class="leg">leg
-                  <div class="shin front">shin</div>
-                  <div class="calf rear">calf</div>
-                </div>
-                <div class="foot">foot
-                  <div class="toes front">toes</div>
-                  <div class="midfoot middle"></div>
-                  <div class="heel rear">heal</div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <h2 id="pick-pain-on-body"></h2>
+      <div id="man" class="human">
+        <!-- heent == head,eye,ear,nose,throat -->
+        <div class="heent male"></div>
+        <div class="upperbody zero">
+          <div id="leftarm" class="arm arm-left male"></div>
+          <div class="torso male"></div>
+          <div id="rightarm" class="arm arm-right male"></div>
         </div>
-        <div id="man" class="human female">
-          <div class="head"></div>
-          <div class="torso">
-            <div class="front-torso">
-              <div class="chest top-front-torso"></div>
-              <div class="abdomen bottom-front-torso"></div>
-            </div>
-            <div class="rear-torso">
-              <div class="back"></div>
-            </div>
-          </div>
-          <div class="limbs">
-          </div>
-          <div class="upperlimbs">
-            <div class="rightside">
-              <div class="arm"></div>
-              <div class="forearm">
-              </div>
-              <div class="hand">
-                <div class="palm"></div>
-                <div class="fingers"></div>
-              </div>
-            </div>
-            <div class="leftside">
-              <div class="arm"></div>
-              <div class="forearm">
-              </div>
-              <div class="hand">
-                <div class="palm"></div>
-                <div class="fingers"></div>
-              </div>
-            </div>
-          <div class="lowerlimbs">
-            <div class="rightside">
-              <div class="thigh"></div>
-              <div class="leg">
-                <div class="shin front"></div>
-                <div class="calf rear"></div>
-              </div>
-              <div class="foot">
-                <div class="toes front"></div>
-                <div class="midfoot middle"></div>
-                <div class="heel rear"></div>
-              </div>
-            </div>
-            <div class="leftside">
-              <div class="thigh"></div>
-              <div class="leg">
-                <div class="shin front"></div>
-                <div class="calf rear"></div>
-              </div>
-              <div class="foot">
-                <div class="toes front"></div>
-                <div class="midfoot middle"></div>
-                <div class="heel rear"></div>
-              </div>
-            </div>
-          </div>
+        <div class="lowerbody zero">
+          <div id="leftleg" class="leg leg-left male"></div>
+          <div id="rightleg" class="leg leg-right male"></div>
         </div>
       </div>
       <select name="pain" multiple>

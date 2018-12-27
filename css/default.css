@@ -1,19 +1,71 @@
 /* default */
 
-
 /* human figure */
+.zero {
+  margin: 0;
+  padding: 0;
+}
 .female {
   background-color: pink;
   border: 1px solid red;
 }
 .male {
   background-color: brown;
+}
+.human {
+  width: 130;
+  height: 500;
+}
+.heent {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.upperbody {
+  width: 120px;
+  height: 130px;
+  margin: 0 auto;
+}
+.arm {
+  width: 20px;
+  height: 125px;
+  display: inline-block;
   border: 1px solid black;
 }
-.head {
-  width: 50px;
-  height: 50px;
+.arm-left {
+  border-radius: 20px 0 20px 0;
 }
+.torso {
+  width: 60px;
+  height: 125px;
+  display: inline-block;
+  border: 1px solid black;
+}
+.arm-right {
+  border-radius: 0 20px 0 20px;
+}
+.lowerbody {
+  width: 120px;
+  height: 210px;
+  margin: auto;
+}
+.leg {
+  width: 30px;
+  height: 125px;
+  display: inline-block;
+  border: 1px solid black;
+}
+.leg-left {
+  border-radius: 0 0 15px 15px;
+  margin-left: 23px;
+}
+.leg-right {
+  border-radius: 0 0 15px 15px;
+}
+
+/*
 .hand,.arm,.torso,.foot,.leg,.hip {
   display: inline-block;
 }
@@ -25,11 +77,15 @@
   width: 50px;
   height: 50px;
 }
+.forearm {
+  width: 50px;
+  height: 50px;
+}
 .hand {
   width: 50px;
   height: 50px;
 }
-.hip {
+.abdomen {
   width: 50px;
   height: 50px;
 }
@@ -41,3 +97,4 @@
   width: 50px;
   height: 50px;
 }
+*/
