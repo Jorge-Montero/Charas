@@ -1,3 +1,44 @@
 /* default */
 
 
+/* human figure */
+.female {
+  background-color: pink;
+  border: 1px solid red;
+}
+.male {
+  background-color: brown;
+  border: 1px solid black;
+}
+.head {
+  width: 50px;
+  height: 50px;
+}
+.torso {
+  width: 50px;
+  height: 50px;
+}
+.hip {
+  width: 50px;
+  height: 50px;
+}
+.arm {
+  width: 50px;
+  height: 50px;
+}
+.hand {
+  width: 50px;
+  height: 50px;
+}
+.hip {
+  width: 50px;
+  height: 50px;
+}
+.leg {
+  width: 50px;
+  height: 50px;
+}
+.foot {
+  width: 50px;
+  height: 50px;
+}
