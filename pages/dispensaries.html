@@ -6,16 +6,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="/css/default.css" />
   <title>Primo Charas</title>
+  <script>
+    var menuShowStatus = "hidden";
+    
+    function loadDefaults() {
+      let topMenu = document.getElementById("top-menu-items");
+      menuShowStatus = "none";
+      topMenu.style.display = "none";
+    }
+    function showHideMenu() {
+      let topMenu = document.getElementById("top-menu-items");
+      if (menuShowStatus == "none") {
+        menuShowStatus = "block";
+        topMenu.style.display = menuShowStatus;
+      } else {
+        menuShowStatus = "none";
+        topMenu.style.display = "none";
+      }
+    }
+    
+    function selectHead() {
+      let selectBox = document.getElementById("pain-list");
+      selectBox.selectedIndex = "0";
+    }
+    function selectLeftArm() {
+      let selectBox = document.getElementById("pain-list");
+      selectBox.selectedIndex = "1";
+    }
+    function selectTorso() {
+      let selectBox = document.getElementById("pain-list");
+      selectBox.selectedIndex = "2";
+    }
+    function selectRightArm() {
+      let selectBox = document.getElementById("pain-list");
+      selectBox.selectedIndex = "3";
+    }
+    function selectLeftLeg() {
+      let selectBox = document.getElementById("pain-list");
+      selectBox.selectedIndex = "4";
+    }
+    function selectRightLeg() {
+      let selectBox = document.getElementById("pain-list");
+      selectBox.selectedIndex = "5";
+    }
+  </script>
 </head>
-<body>
+<body onload="loadDefaults()">
 <header>
-  <nav>
+    <nav id="top-nav">
     <div>
-      <div class="hamburger-menu"></div>
-      <div class="hamburger-menu"></div>
-      <div class="hamburger-menu"></div>
+      <div id="top-menu-symbol" class="page-title" onclick="showHideMenu()">
+        <div class="menu-symbol"></div>
+        <div class="menu-symbol middle-line"></div>
+        <div class="menu-symbol"></div>
+      </div>
+      <div class="page-title w90">
+        <h1 class="center-text">Primo Charas</h1>
+      </div>
     </div>
-    <ul>
+    <ul id="top-menu-items" class="no-bullets">
+      <li><a href="/index.html">Home</a></li>
       <li><a href="/pages/brands.html">Brands</a></li>
       <li><a href="/pages/dispensaries.html">Dispensaries</a></li>
       <li><a href="/pages/stocks.html">Industry Stocks</a></li>
@@ -25,8 +75,15 @@
   </nav>
 </header>
 <main>
-  <h1 class="center-text">Primo Charas</h1>
   <h2>Dispensaries</h2>
+  <section id="top-stories">
+    <h3 class="">Featured Dispensaries</h3>
+    <dl>
+      <dt>Dispensary Ratings</dt><dd>Understanding dispensary ratings, and the details of their CBD treatment offerings.</dd>
+      <!--Interview with Dispensaries-->
+    </dl>
+  </section>
+  <section>
     <p><button onclick="geoFindMe()">Dispensaries near me</button></p>
     <div id="out"></div>
     <h3>Map</h3>
@@ -306,11 +363,12 @@
         </li>
       </ul>
       <h4>Canada</h4>
-    <h3>Full Dispensaries Listing</h3>
+    <h3>Global Dispensaries Listing</h3>
     <p>
-      <a href="http://primocharas.com/dispensaries.html">Dispensaries</a>
+      <a href="/pages/dispensaries.html">Dispensaries</a>
     </p>
     <p>reference: <a href="https://cbdorigin.com/is-cbd-legal/" target="_blank">CBD legalization status</a></p>
+  </section>
 </main>
 <footer>
   <nav>

@@ -16,17 +16,22 @@
 }
 .middle-line { margin: 2px 0; }
 
+#top-menu-items {
+  background-color: #8DA573;
+  padding: 5px 5px 5px 5px;
+}
 .no-bullets { list-style-type: none; }
 
 #top-stories {
-  background-color: #556B2F;
-  padding: 5px 5px 5px 5px;
+  background-color: #40A763;
+  color: #000000;
+  padding: 5px 5px 5px 25px;
 }
 
 /* pain list */
 #pain-list {
   height: 200px;
-  margin-top: 0; padding-top: 0;
+  margin: 0 5px 35px 5px; padding-top: 0;
 }
 
 /* human figure */
