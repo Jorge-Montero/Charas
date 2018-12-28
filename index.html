@@ -8,6 +8,30 @@
   <title>Primo Charas</title>
   <script>
     var menuShowStatus = "hidden";
+    var symptoms = {
+      "head": [
+        "PTSD",
+        "depression",
+        "epilepsy",
+        "glaucoma",
+        "skin care"
+      ],
+      "arm": [
+        "joint pain",
+        "skin care"
+      ],
+      "torso": [
+        "Crohn's disease",
+        "nausea",
+        "anorexia",
+        "appetite loss",
+        "skin care"
+      ],
+      "leg": [
+        "joint pain",
+        "skin care"
+      ] 
+    };
     
     function loadDefaults() {
       let topMenu = document.getElementById("top-menu-items");
@@ -26,28 +50,190 @@
     }
     
     function selectHead() {
+      let selectHead = document.getElementById("heent");
+      selectHead.style.backgroundColor = "yellow";
+
+      let selectLeftArm = document.getElementById("leftarm");
+      selectLeftArm.style.backgroundColor = "#D06837";
+
+      let selectTorso = document.getElementById("torso");
+      selectTorso.style.backgroundColor = "#D06837";
+
+      let selectRightArm = document.getElementById("rightarm");
+      selectRightArm.style.backgroundColor = "#D06837";
+
+      let selectLeftLeg = document.getElementById("leftleg");
+      selectLeftLeg.style.backgroundColor = "#D06837";
+
+      let selectRightLeg = document.getElementById("rightleg");
+      selectRightLeg.style.backgroundColor = "#D06837";
+
       let selectBox = document.getElementById("pain-list");
       selectBox.selectedIndex = "0";
+      let showSymptoms = document.getElementById("symptoms-list");
+      while( showSymptoms.firstChild ) {
+        showSymptoms.removeChild( showSymptoms.firstChild );
+      }
+      for( var i=0; i<symptoms.head.length; i++ ) {
+        var li = document.createElement('li');
+        showSymptoms.appendChild(li);
+        li.innerHTML = li.innerHTML + symptoms.head[i];
+      }
     }
     function selectLeftArm() {
+      let selectHead = document.getElementById("heent");
+      selectHead.style.backgroundColor = "#D06837";
+
+      let selectLeftArm = document.getElementById("leftarm");
+      selectLeftArm.style.backgroundColor = "yellow";
+
+      let selectTorso = document.getElementById("torso");
+      selectTorso.style.backgroundColor = "#D06837";
+
+      let selectRightArm = document.getElementById("rightarm");
+      selectRightArm.style.backgroundColor = "#D06837";
+
+      let selectLeftLeg = document.getElementById("leftleg");
+      selectLeftLeg.style.backgroundColor = "#D06837";
+
+      let selectRightLeg = document.getElementById("rightleg");
+      selectRightLeg.style.backgroundColor = "#D06837";
+
       let selectBox = document.getElementById("pain-list");
       selectBox.selectedIndex = "1";
+      let showSymptoms = document.getElementById("symptoms-list");
+      while( showSymptoms.firstChild ) {
+        showSymptoms.removeChild( showSymptoms.firstChild );
+      }
+      for( var i=0; i<symptoms.arm.length; i++ ) {
+        var li = document.createElement('li');
+        showSymptoms.appendChild(li);
+        li.innerHTML = li.innerHTML + symptoms.arm[i];
+      }
     }
     function selectTorso() {
+      let selectHead = document.getElementById("heent");
+      selectHead.style.backgroundColor = "#D06837";
+
+      let selectLeftArm = document.getElementById("leftarm");
+      selectLeftArm.style.backgroundColor = "#D06837";
+
+      let selectTorso = document.getElementById("torso");
+      selectTorso.style.backgroundColor = "yellow";
+
+      let selectRightArm = document.getElementById("rightarm");
+      selectRightArm.style.backgroundColor = "#D06837";
+
+      let selectLeftLeg = document.getElementById("leftleg");
+      selectLeftLeg.style.backgroundColor = "#D06837";
+
+      let selectRightLeg = document.getElementById("rightleg");
+      selectRightLeg.style.backgroundColor = "#D06837";
+
       let selectBox = document.getElementById("pain-list");
       selectBox.selectedIndex = "2";
+      let showSymptoms = document.getElementById("symptoms-list");
+      while( showSymptoms.firstChild ) {
+        showSymptoms.removeChild( showSymptoms.firstChild );
+      }
+      for( var i=0; i<symptoms.torso.length; i++ ) {
+        var li = document.createElement('li');
+        showSymptoms.appendChild(li);
+        li.innerHTML = li.innerHTML + symptoms.torso[i];
+      }
     }
     function selectRightArm() {
+      let selectHead = document.getElementById("heent");
+      selectHead.style.backgroundColor = "#D06837";
+
+      let selectLeftArm = document.getElementById("leftarm");
+      selectLeftArm.style.backgroundColor = "#D06837";
+
+      let selectTorso = document.getElementById("torso");
+      selectTorso.style.backgroundColor = "#D06837";
+
+      let selectRightArm = document.getElementById("rightarm");
+      selectRightArm.style.backgroundColor = "yellow";
+
+      let selectLeftLeg = document.getElementById("leftleg");
+      selectLeftLeg.style.backgroundColor = "#D06837";
+
+      let selectRightLeg = document.getElementById("rightleg");
+      selectRightLeg.style.backgroundColor = "#D06837";
+
       let selectBox = document.getElementById("pain-list");
       selectBox.selectedIndex = "3";
+      let showSymptoms = document.getElementById("symptoms-list");
+      while( showSymptoms.firstChild ) {
+        showSymptoms.removeChild( showSymptoms.firstChild );
+      }
+      for( var i=0; i<symptoms.arm.length; i++ ) {
+        var li = document.createElement('li');
+        showSymptoms.appendChild(li);
+        li.innerHTML = li.innerHTML + symptoms.arm[i];
+      }
     }
     function selectLeftLeg() {
+      let selectHead = document.getElementById("heent");
+      selectHead.style.backgroundColor = "#D06837";
+
+      let selectLeftArm = document.getElementById("leftarm");
+      selectLeftArm.style.backgroundColor = "#D06837";
+
+      let selectTorso = document.getElementById("torso");
+      selectTorso.style.backgroundColor = "#D06837";
+
+      let selectRightArm = document.getElementById("rightarm");
+      selectRightArm.style.backgroundColor = "#D06837";
+
+      let selectLeftLeg = document.getElementById("leftleg");
+      selectLeftLeg.style.backgroundColor = "yellow";
+
+      let selectRightLeg = document.getElementById("rightleg");
+      selectRightLeg.style.backgroundColor = "#D06837";
+
       let selectBox = document.getElementById("pain-list");
       selectBox.selectedIndex = "4";
+      let showSymptoms = document.getElementById("symptoms-list");
+      while( showSymptoms.firstChild ) {
+        showSymptoms.removeChild( showSymptoms.firstChild );
+      }
+      for( var i=0; i<symptoms.leg.length; i++ ) {
+        var li = document.createElement('li');
+        showSymptoms.appendChild(li);
+        li.innerHTML = li.innerHTML + symptoms.leg[i];
+      }
     }
     function selectRightLeg() {
+      let selectHead = document.getElementById("heent");
+      selectHead.style.backgroundColor = "#D06837";
+
+      let selectLeftArm = document.getElementById("leftarm");
+      selectLeftArm.style.backgroundColor = "#D06837";
+
+      let selectTorso = document.getElementById("torso");
+      selectTorso.style.backgroundColor = "#D06837";
+
+      let selectRightArm = document.getElementById("rightarm");
+      selectRightArm.style.backgroundColor = "#D06837";
+
+      let selectLeftLeg = document.getElementById("leftleg");
+      selectLeftLeg.style.backgroundColor = "#D06837";
+
+      let selectRightLeg = document.getElementById("rightleg");
+      selectRightLeg.style.backgroundColor = "yellow";
+
       let selectBox = document.getElementById("pain-list");
       selectBox.selectedIndex = "5";
+      let showSymptoms = document.getElementById("symptoms-list");
+      while( showSymptoms.firstChild ) {
+        showSymptoms.removeChild( showSymptoms.firstChild );
+      }
+      for( var i=0; i<symptoms.leg.length; i++ ) {
+        var li = document.createElement('li');
+        showSymptoms.appendChild(li);
+        li.innerHTML = li.innerHTML + symptoms.leg[i];
+      }
     }
   </script>
 </head>
@@ -83,14 +269,15 @@
   </section>
   <section id="pain-on-body">
     <form action="/nothing_yet.php">
-      <h2 id="pick-pain-on-body">Affected area?</h2>
+      <!-- <h2 id="pick-pain-on-body">Affected area?</h2> -->
       <div class="pain-selection">
+        <div id="human-image-label">Affected area?</div>
         <div id="man" class="human">
           <!-- heent == head,eye,ear,nose,throat -->
-          <div class="heent male" onclick="selectHead()"></div>
+          <div id="heent" class="heent male" onclick="selectHead()"></div>
           <div class="upperbody zero">
             <div id="leftarm" class="arm arm-left male" onclick="selectLeftArm()"></div>
-            <div class="torso male" onclick="selectTorso()"></div>
+            <div id="torso" class="torso male" onclick="selectTorso()"></div>
             <div id="rightarm" class="arm arm-right male" onclick="selectRightArm()"></div>
           </div>
           <div class="lowerbody zero">
@@ -100,6 +287,13 @@
         </div>
       </div>
       <div id="area-listing" class="pain-selection">
+        <div id="symptoms-list-label">Symptoms:</div>
+        <ul id="symptoms-list">
+          <li>Crohn's disease</li>
+          <li>nausea</li>
+          <li>anorexia</li>
+          <li>appetite loss</li>
+        </ul>
         <select id="pain-list" name="pain" multiple>
           <option value="head">Head</option>
           <option value="arm-left">Arm-Left</option>
