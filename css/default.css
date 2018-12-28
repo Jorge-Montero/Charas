@@ -1,73 +1,68 @@
 /* default */
-.pain-selection {
-  display: inline-block;
-}
+.pain-selection { display: inline-block; }
 #body-submit {
   width: 100px;
   display: block;
+}
+.center-text { text-align: center; }
+.page-title { display: inline-block; }
+.w90 { width: 90%; }
+#top-nav { border-bottom: 1px grey solid; }
+
+/* hamburger menu */
+.menu-symbol {
+  width: 20px; height: 5px;
+  background-color: #57736A;
+}
+.middle-line { margin: 2px 0; }
+
+.no-bullets { list-style-type: none; }
+
+#top-stories {
+  background-color: #556B2F;
+  padding: 5px 5px 5px 5px;
 }
 
 /* pain list */
 #pain-list {
   height: 200px;
-  margin-top: 0;
-  padding-top: 0;
+  margin-top: 0; padding-top: 0;
 }
 
 /* human figure */
-.zero {
-  margin: 0;
-  padding: 0;
-}
+.zero { margin: 0; padding: 0; }
 .female {
   background-color: pink;
   border: 1px solid red;
 }
-.male {
-  background-color: brown;
-}
-.human {
-  width: 130;
-  height: 500;
-}
-.heent {
-  width: 40px;
-  height: 40px;
+.male { background-color: #D06837; }
+.human { width: 130; height: 500; }
+.heent { width: 40px; height: 40px;
   margin: 0 auto;
-  border: 1px solid black;
-  border-radius: 20px;
+  border: 1px solid black; border-radius: 20px;
 }
 .upperbody {
-  width: 120px;
-  height: 130px;
+  width: 120px; height: 130px;
   margin: 0 auto;
 }
 .arm {
-  width: 20px;
-  height: 125px;
+  width: 20px; height: 125px;
   display: inline-block;
   border: 1px solid black;
 }
-.arm-left {
-  border-radius: 20px 0 20px 0;
-}
+.arm-left { border-radius: 20px 0 20px 0; }
 .torso {
-  width: 60px;
-  height: 125px;
+  width: 60px; height: 125px;
   display: inline-block;
   border: 1px solid black;
 }
-.arm-right {
-  border-radius: 0 20px 0 20px;
-}
+.arm-right { border-radius: 0 20px 0 20px; }
 .lowerbody {
-  width: 120px;
-  height: 210px;
+  width: 120px; height: 210px;
   margin: auto;
 }
 .leg {
-  width: 30px;
-  height: 125px;
+  width: 30px; height: 125px;
   display: inline-block;
   border: 1px solid black;
 }
@@ -75,7 +70,8 @@
   border-radius: 0 0 15px 15px;
   margin-left: 23px;
 }
-.leg-right {
-  border-radius: 0 0 15px 15px;
-}
+.leg-right { border-radius: 0 0 15px 15px; }
 
+footer {
+  border-top: 1px solid #8DA573;
+}

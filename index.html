@@ -7,6 +7,24 @@
   <link rel="stylesheet" type="text/css" href="/css/default.css" />
   <title>Primo Charas</title>
   <script>
+    var menuShowStatus = "hidden";
+    
+    function loadDefaults() {
+      let topMenu = document.getElementById("top-menu-items");
+      menuShowStatus = "none";
+      topMenu.style.display = "none";
+    }
+    function showHideMenu() {
+      let topMenu = document.getElementById("top-menu-items");
+      if (menuShowStatus == "none") {
+        menuShowStatus = "block";
+        topMenu.style.display = menuShowStatus;
+      } else {
+        menuShowStatus = "none";
+        topMenu.style.display = "none";
+      }
+    }
+    
     function selectHead() {
       let selectBox = document.getElementById("pain-list");
       selectBox.selectedIndex = "0";
@@ -33,15 +51,20 @@
     }
   </script>
 </head>
-<body onload="loadAlert()">
+<body onload="loadDefaults()">
 <header>
-  <nav>
+    <nav id="top-nav">
     <div>
-      <div class="hamburger-menu"></div>
-      <div class="hamburger-menu"></div>
-      <div class="hamburger-menu"></div>
+      <div id="top-menu-symbol" class="page-title" onclick="showHideMenu()">
+        <div class="menu-symbol"></div>
+        <div class="menu-symbol middle-line"></div>
+        <div class="menu-symbol"></div>
+      </div>
+      <div class="page-title w90">
+        <h1 class="center-text">Primo Charas</h1>
+      </div>
     </div>
-    <ul>
+    <ul id="top-menu-items" class="no-bullets">
       <li><a href="/pages/brands.html">Brands</a></li>
       <li><a href="/pages/dispensaries.html">Dispensaries</a></li>
       <li><a href="/pages/stocks.html">Industry Stocks</a></li>
@@ -51,19 +74,17 @@
   </nav>
 </header>
 <main>
-  <h1 class="center-text">Primo Charas</h1>
-  <section id="">
-    <h2 class="center-text">Top Stories</h2>
-    <ul>
-      <li>Hemp-Derived CBD -vs- Marijuana derived CBD</li>
+  <section id="top-stories">
+    <h2 class="">Top Stories</h2>
+    <dl>
+      <dt>Derived CBD</dt><dd> Hemp -vs- Marijuana</dd>
       <!--Interview with Dispensaries-->
-    </ul>
+    </dl>
   </section>
   <section id="pain-on-body">
-    <h3>Area in pain</h3>
     <form action="/nothing_yet.php">
+      <h2 id="pick-pain-on-body">Click affect region?</h2>
       <div class="pain-selection">
-        <h2 id="pick-pain-on-body"></h2>
         <div id="man" class="human">
           <!-- heent == head,eye,ear,nose,throat -->
           <div class="heent male" onclick="selectHead()"></div>
