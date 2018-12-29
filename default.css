@@ -1,0 +1,154 @@
+/* default */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.pain-selection { display: inline-block; }
+#body-submit {
+  width: 100px;
+  display: block;
+}
+.center-text { text-align: center; }
+.page-title { display: inline-block; }
+.w90 { width: 90%; }
+/* #top-nav { border-bottom: 1px grey solid; } */
+
+/* hamburger menu */
+.menu-symbol {
+  width: 20px; height: 5px;
+  background-color: #57736A;
+}
+.middle-line { margin: 2px 0; }
+
+#top-menu-symbol {
+  margin-left: 5px;
+}
+
+#top-menu-items {
+  background-color: #8DA573;
+  padding: 5px 5px 5px 5px;
+  height: 100px;
+  margin-bottom: 10px;
+  /* border-radius: 0 50px 50px 0; */
+}
+.no-bullets { list-style-type: none; }
+
+#top-stories {
+  background-color: #40A763;
+  color: #000000;
+  height: 120px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 60px 0 0 60px;
+}
+.top-story-label {
+  padding-left: 50px;
+  position: absolute;
+  top: -80px;
+}
+.top-story-content {
+  padding-left: 50px;
+  position: absolute;
+  top: -55px;
+}
+.story-logo {
+  width: 100%;
+  height: 20px;
+}
+.top-story {
+  width: 79%;
+  display: inline-block;
+  position: relative;
+}
+.top-story-icons {
+  padding-top: 12px;
+  width: 19%;
+  display: inline-block;
+}
+#storyBrand{
+  background-color: #D06837;
+  margin-bottom: 5px;
+}
+#storyDispensary{
+  background-color: #57736A;
+  margin-bottom: 5px;
+}
+#storySafety{
+  background-color: #57736A;
+  margin-bottom: 5px;
+}
+#storyDoctor{
+  background-color: #57736A;
+}
+
+#featured-stock {
+  margin: 0 5px 5px 5px;
+  padding-left: 10px;
+  border-left: 10px dotted #8DA573;
+}
+
+/* pain list */
+#pain-on-body {
+  margin-top: 20px;
+}
+.pain-selection {
+  margin-left: 10px;
+}
+#symptoms-list {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+#pain-list {
+  height: 120px;
+  margin: 0 5px 5px 5px; padding-top: 0;
+}
+
+/* human figure */
+.zero { margin: 0; padding: 0; }
+.male { background-color: #D06837; }
+
+#human-image-label {
+  text-align: center;
+}
+.human {
+  width: 130px; height: 300px;
+}
+.heent { width: 40px; height: 40px;
+  margin: 0 auto;
+  border: 1px solid black; border-radius: 20px;
+}
+.upperbody {
+  width: 120px; height: 105px;
+  margin: 0 auto;
+}
+.arm {
+  width: 20px; height: 100px;
+  display: inline-block;
+  border: 1px solid black;
+}
+.arm-left { border-radius: 20px 0 20px 0; }
+.torso {
+  width: 60px; height: 100px;
+  display: inline-block;
+  border: 1px solid black;
+}
+.arm-right { border-radius: 0 20px 0 20px; }
+.lowerbody {
+  width: 120px; height: 125px;
+  margin: auto;
+}
+.leg {
+  width: 30px; height: 100px;
+  display: inline-block;
+  border: 1px solid black;
+}
+.leg-left {
+  border-radius: 0 0 15px 15px;
+  margin-left: 23px;
+}
+.leg-right { border-radius: 0 0 15px 15px; }
+
+footer {
+  border-top: 1px solid #8DA573;
+}
