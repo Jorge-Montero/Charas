@@ -32,26 +32,23 @@
         "skin care"
       ]
     };
-<<<<<<< HEAD
-<!-- this comment use to test github update -->
-=======
->>>>>>> a50373eb097661f4bf5d1e39e757cd6d4e2d2792
+
     var topStoriesList = {
       "storyBrand": [
-        "",
-        ""
+        "Luxurious Cannabis",
+        "Canada's High End brands<a href='/pages/brands.html'>...read more</a>"
       ],
       "storyDispensary": [
-        "",
-        ""
+        "Step 1: License",
+        "A provisional license can get you <a href='/pages/dispensaries.html'>...read more</a>"
       ],
-      "story": [
-        "",
-        ""
+      "storySafety": [
+        "Dispensary vs Store",
+        "Medical dispensary or recreational <a href='/pages/health-safety.html'>...read more</a>"
       ],
       "storyDoctor": [
-        "",
-        ""
+        "Who's your Dr.?",
+        "Picking a doctor is daunting <a href='/pages/doctors.html'>...read more</a>"
       ]
     };
     
@@ -80,6 +77,11 @@
       storySafety.style.backgroundColor = "#57736A";
       let storyDoctor = document.getElementById("storyDoctor");
       storyDoctor.style.backgroundColor = "#57736A";
+      
+      let topStoryTitle = document.getElementById("top-story-title");
+      topStoryTitle.innerHTML = topStoriesList.storyBrand[0];
+      let topStoryDetails = document.getElementById("top-story-details");
+      topStoryDetails.innerHTML = topStoriesList.storyBrand[1];
     }
     function selectStoryDispensary() {
       let storyBrand = document.getElementById("storyBrand");
@@ -90,6 +92,11 @@
       storySafety.style.backgroundColor = "#57736A";
       let storyDoctor = document.getElementById("storyDoctor");
       storyDoctor.style.backgroundColor = "#57736A";
+
+      let topStoryTitle = document.getElementById("top-story-title");
+      topStoryTitle.innerHTML = topStoriesList.storyDispensary[0];
+      let topStoryDetails = document.getElementById("top-story-details");
+      topStoryDetails.innerHTML = topStoriesList.storyDispensary[1];
     }
     function selectStorySafety() {
       let storyBrand = document.getElementById("storyBrand");
@@ -100,6 +107,11 @@
       storySafety.style.backgroundColor = "#D06837";
       let storyDoctor = document.getElementById("storyDoctor");
       storyDoctor.style.backgroundColor = "#57736A";
+
+      let topStoryTitle = document.getElementById("top-story-title");
+      topStoryTitle.innerHTML = topStoriesList.storySafety[0];
+      let topStoryDetails = document.getElementById("top-story-details");
+      topStoryDetails.innerHTML = topStoriesList.storySafety[1];
     }
     function selectStoryDoctor() {
       let storyBrand = document.getElementById("storyBrand");
@@ -110,6 +122,11 @@
       storySafety.style.backgroundColor = "#57736A";
       let storyDoctor = document.getElementById("storyDoctor");
       storyDoctor.style.backgroundColor = "#D06837";
+
+      let topStoryTitle = document.getElementById("top-story-title");
+      topStoryTitle.innerHTML = topStoriesList.storyDoctor[0];
+      let topStoryDetails = document.getElementById("top-story-details");
+      topStoryDetails.innerHTML = topStoriesList.storyDoctor[1];
     }
     
     function selectHead() {
@@ -125,8 +142,8 @@
       selectLeftLeg.style.backgroundColor = "#D06837";
       let selectRightLeg = document.getElementById("rightleg");
       selectRightLeg.style.backgroundColor = "#D06837";
-      let selectBox = document.getElementById("pain-list");
 
+      let selectBox = document.getElementById("pain-list");
       selectBox.selectedIndex = "0";
       let showSymptoms = document.getElementById("symptoms-list");
       while( showSymptoms.firstChild ) {
@@ -151,8 +168,8 @@
       selectLeftLeg.style.backgroundColor = "#D06837";
       let selectRightLeg = document.getElementById("rightleg");
       selectRightLeg.style.backgroundColor = "#D06837";
-      let selectBox = document.getElementById("pain-list");
 
+      let selectBox = document.getElementById("pain-list");
       selectBox.selectedIndex = "1";
       let showSymptoms = document.getElementById("symptoms-list");
       while( showSymptoms.firstChild ) {
@@ -177,8 +194,8 @@
       selectLeftLeg.style.backgroundColor = "#D06837";
       let selectRightLeg = document.getElementById("rightleg");
       selectRightLeg.style.backgroundColor = "#D06837";
-      let selectBox = document.getElementById("pain-list");
 
+      let selectBox = document.getElementById("pain-list");
       selectBox.selectedIndex = "2";
       let showSymptoms = document.getElementById("symptoms-list");
       while( showSymptoms.firstChild ) {
@@ -203,8 +220,8 @@
       selectLeftLeg.style.backgroundColor = "#D06837";
       let selectRightLeg = document.getElementById("rightleg");
       selectRightLeg.style.backgroundColor = "#D06837";
-      let selectBox = document.getElementById("pain-list");
 
+      let selectBox = document.getElementById("pain-list");
       selectBox.selectedIndex = "3";
       let showSymptoms = document.getElementById("symptoms-list");
       while( showSymptoms.firstChild ) {
@@ -229,8 +246,8 @@
       selectLeftLeg.style.backgroundColor = "yellow";
       let selectRightLeg = document.getElementById("rightleg");
       selectRightLeg.style.backgroundColor = "#D06837";
-      let selectBox = document.getElementById("pain-list");
 
+      let selectBox = document.getElementById("pain-list");
       selectBox.selectedIndex = "4";
       let showSymptoms = document.getElementById("symptoms-list");
       while( showSymptoms.firstChild ) {
@@ -255,8 +272,8 @@
       selectLeftLeg.style.backgroundColor = "#D06837";
       let selectRightLeg = document.getElementById("rightleg");
       selectRightLeg.style.backgroundColor = "yellow";
-      let selectBox = document.getElementById("pain-list");
 
+      let selectBox = document.getElementById("pain-list");
       selectBox.selectedIndex = "5";
       let showSymptoms = document.getElementById("symptoms-list");
       while( showSymptoms.firstChild ) {
